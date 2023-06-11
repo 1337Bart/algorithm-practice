@@ -1,0 +1,7 @@
+Dijkstra's algorithm is a graph search algorithm that solves the shortest-path problem for a graph with non-negative edge path costs, producing a shortest path tree. This algorithm is often used in routing and as a subroutine in other graph algorithms.
+
+The algorithm works by maintaining a set of unvisited nodes and continuously selecting the node with the smallest distance from the start node, then visiting all its unvisited neighbors. The distance to the start node for the selected node is set as the smallest possible distance, and the distances to the neighbors are updated if a shorter path to them is found. This process continues until all nodes have been visited.
+
+The algorithm uses a priority queue to select the unvisited node with the smallest distance, which allows it to work efficiently with large graphs. The priority queue is usually implemented as a binary heap, which allows for fast extraction of the minimum element and insertion of new elements.
+
+The time complexity of the algorithm is O((V+E) log V), where V is the number of vertices and E is the number of edges in the graph. This is because each node and each edge will be processed once, and the time complexity of extracting the minimum from and inserting into a binary heap is O(log V).
